@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Sorbisches Gymnasium Bautzen</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"> </script>
+		<!-- OFFLINE speichern der jquery? -->
+		<script type="text/javascript"> 
+			$(document).ready(function() {
+				$('.menubutton').click(function() {
+					$('nav').slideToggle('slow');
+				});
+			});
+		</script>
+
+		<!-- PhoneGap js-->
+		<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <!--  sub auto-updaten der App?  
+        <script type="text/javascript">
+            app.initialize();
+        </script>	 -->
+
+	</head>
+
+	<body>
+
+		<!-- menubar -->
+		<section id="menubar">
+			<ul>
+				<li><a class="menubutton" href="#menu"><img src="img/BurgerButton.jpg"/></a></li>
+			</ul>
+		</section>
+
+		<!-- header -->
+		<header>
+			<h1>Sorbisches Gymnasium Bautzen</h1>
+		</header>
+		<nav class="nav">
+			<ul>
+				<li><a href="#Vertretungsplan" class="active">Vertretungsplan</a></li>	
+				<!-- warum nur erste Klasse aktiv? ==>nur diese ist orange unterstrichen -->
+				<li><a href="#Stundenplan">Stundenplan</a></li>
+				<li><a href="#KlausurplanK11">Klausurplan Klasse 11</a></li>
+				<li><a href="#KlausurplanK12">Klausurplan Klasse 12</a></li>
+			</ul>
+		</nav>
+		
+		<!-- Vertretungsplan -->
+		<section id="Vertretungsplan">
+			
+			<input type="button" id="button1" onclick="window.open('http://www.sorbisches-gymnasium.de/2013/deutsch/images/phocadownload/Plaene_deutsch/vertretung.pdf', '_system', 'location=yes');" value="VP via System">
+
+			<input type="button" id="button1" onclick="window.open('https://docs.google.com/viewer?url=http://www.sorbisches-gymnasium.de/2013/deutsch/images/phocadownload/Plaene_deutsch/vertretung.pdf', '_blank', 'location=yes','closebuttoncaption=Return');" value="VP via GoogleDocs">
+
+			<input type="button" id="button1" onclick="window.open('http://www.sorbisches-gymnasium.de/2013/deutsch/images/phocadownload/stuplan/Kla1.htm', '_blank', 'location=yes');" value="Stundenplan">
+		</section>
+
+		<!-- Main -->
+		<section id=main>	
+			<article>
+				<h2>Überschrift</h2>
+				<p>Absatz</p>
+			</article>
+		</section>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Franz Friedrich 2016. All rights reserved.</li><li></li>
+					</ul>
+				</div>
+			</footer>
+
+		
+	</body>
+</html>
