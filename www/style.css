@@ -61,7 +61,7 @@ a {
 /*menubar*/
 #menubar {
 	display:block;
-	background: #FFFFFF;
+	background: #234123;
 }
 #menubar ul{
 	display:block;
@@ -94,7 +94,7 @@ nav ul{
 	display:block;	
 }
 nav ul li{
-	display:inline;
+	display:block;
 	margin:0em 0.188em 0em 0.188em;
 }
 
@@ -156,9 +156,9 @@ footer ul{
 	margin:0px auto; 
 }
 footer ul li{
-	display: inline;
+	display: block;
 	font-size: 0.8em;
-	line-height: 2.8em;
+	line-height: 1.8em;
 	color: #E2DBDB;
 	padding: 0em 0.625em 0em 0.625em;	
 }
@@ -208,7 +208,7 @@ footer ul li{
 		display: block;
 	}
 	nav {
-		display: none;
+		display: block;
 		height: auto;
 	}
 	nav ul li {
