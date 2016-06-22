@@ -77,7 +77,6 @@ header {
 	height:6em;
 	background: #ce1126;
 	text-align: center;
-	vertical-align:center;
 }
 
 /*navigation*/
@@ -94,6 +93,7 @@ nav ul{
 nav ul li{
 	display:block;
 	margin:0em 0.188em 0em 0.188em;
+	margin-bottom:1em;
 }
 
 nav ul li a {
@@ -125,20 +125,25 @@ nav ul li a.active{
 
 /* Footer */
 footer {
+	height:6em;
 	display: block;
 	text-align: center;
+	vertical-align:middle;
+	background-color:#000000;
+	color:#FFFFFF;
+
 }
 footer ul{
 	display: block;
-	width: 100%
+	width: 100%;
 	max-width:980px;
-	
+	vertical-align:middle;	
 }
 footer ul li{
 	display: block;
 	font-size: 0.8em;
-	padding: 0em 0.625em 0em 0.625em;	
+	padding: 0em 0.625em 0em 0.625em;
+	vertical-align:middle;
+	
 }
-footer ul li{
-	color: #FFFFFF
-}
+
