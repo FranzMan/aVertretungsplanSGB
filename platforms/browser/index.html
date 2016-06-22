@@ -19,10 +19,14 @@
 		<!-- PhoneGap js-->
 		<script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+		
+		
         <!--  sub auto-updaten der App? --> 
         <script type="text/javascript">
             app.initialize();
         </script>
+		
+		
 
 	</head>
 
@@ -38,28 +42,22 @@
 		</section>
 
 		<!-- header -->
-		<header>
-			<h1>Sorbisches Gymnasium Bautzen23</h1>
+		<header>		
+			<h1>Sorbisches Gymnasium Bautzen</h1>
 		</header>
 		<nav class="nav">
 			<ul>
-				<li><a href="#Vertretungsplan" class="active">Vertretungsplan</a></li>	
-				<!-- warum nur erste Klasse aktiv? ==>nur diese ist orange unterstrichen -->
-				<li><a href="#Stundenplan">Stundenplan</a></li>
-				<li><a href="#KlausurplanK11">Klausurplan Klasse 11</a></li>
-				<li><a href="#KlausurplanK12">Klausurplan Klasse 12</a></li>
-			</ul>
+				<li> <a onclick="window.open('http://www.sorbisches-gymnasium.de/2013/deutsch/images/phocadownload/Plaene_deutsch/vertretung.pdf', '_system', 'location=yes');"class="active">Vertretungsplan</li> 
+				<li> <a onclick="window.open('http://www.sorbisches-gymnasium.de/2013/deutsch/images/phocadownload/stuplan/Kla1.htm', '_system', 'location=yes');"class="active">Stundenplan</li> 
+				<li> <a onclick="window.open('http://www.sorbisches-gymnasium.de/2013/deutsch/images/phocadownload/Plaene_deutsch/Klausurplan_11.pdf', '_system', 'location=yes');"class="active">Klausurplan Klasse 11</li>
+				<li> <a onclick="window.open('http://www.sorbisches-gymnasium.de/2013/deutsch/images/phocadownload/Plaene_deutsch/Klausurplan_12.pdf', '_system', 'location=yes');"class="active">Klausurplan Klasse 12</li>
+				<!-- führt zur Anmeldung: wegen index.php?
+				<li> <a onclick="window.open('http://www.sorbisches-gymnasium.de/2013/deutsch/index.php/unterrichtszeiten-und-pausen/130-unterrichtszeiten-2014-2015', '_system', 'location=yes');"class="active">Unterrichtszeiten</li>
+				-->
+			</ul>				
 		</nav>
 		
-		<!-- Vertretungsplan -->
-		<section id="Vertretungsplan">
-			
-			<input type="button" id="button1" onclick="window.open('http://www.sorbisches-gymnasium.de/2013/deutsch/images/phocadownload/Plaene_deutsch/vertretung.pdf', '_system', 'location=yes');" value="VP via System">
 
-			<input type="button" id="button1" onclick="window.open('https://docs.google.com/viewer?url=http://www.sorbisches-gymnasium.de/2013/deutsch/images/phocadownload/Plaene_deutsch/vertretung.pdf', '_blank', 'location=yes','closebuttoncaption=Return');" value="VP via GoogleDocs">
-
-			<input type="button" id="button1" onclick="window.open('http://www.sorbisches-gymnasium.de/2013/deutsch/images/phocadownload/stuplan/Kla1.htm', '_blank', 'location=yes');" value="Stundenplan">
-		</section>
 
 		
 		
@@ -77,7 +75,7 @@
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
-					<ul class="menu">
+					<ul class="menu">						
 						<li>&copy; Franz Friedrich 2016. All rights reserved.</li>
 						<li>Feedback an fr@sorbisches-gymnasium.de</li>
 					</ul>
